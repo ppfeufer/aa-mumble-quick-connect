@@ -1,6 +1,6 @@
 [run]
 branch = True
-source = aa_intel_tool
+source = aa_mumble_quick_connect
 
 [report]
 exclude_lines =
