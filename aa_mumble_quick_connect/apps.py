@@ -16,4 +16,4 @@ class AaMumbleQuickConnectConfig(AppConfig):
 
     name = "aa_mumble_quick_connect"
     label = "aa_mumble_quick_connect"
-    verbose_name = f"Example App v{__version__}"
+    verbose_name = f"Mumble Quick Connect v{__version__}"
