@@ -21,6 +21,94 @@ ______________________________________________________________________
 
 <!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=2 -->
 
+- [Screenshots](#screenshots)
+  - [Mumble Quick Connect](#mumble-quick-connect)
+- [Installation](#installation)
+  - [Step 1: Install the App](#step-1-install-the-app)
+  - [Step 2: Update Your AA Settings](#step-2-update-your-aa-settings)
+  - [Step 3: Finalizing the Installation](#step-3-finalizing-the-installation)
+- [Permissions](#permissions)
+- [Changelog](#changelog)
+- [Translation Status](#translation-status)
+- [Contributing](#contributing)
+
 <!-- mdformat-toc end -->
 
 ______________________________________________________________________
+
+## Screenshots<a name="screenshots"></a>
+
+### Mumble Quick Connect<a name="mumble-quick-connect"></a>
+
+![Mumble Quick Connect](https://raw.githubusercontent.com/ppfeufer/aa-mumble-quick-connect/master/docs/images/mumble-quick-connect.jpg "Mumble Quick Connect")
+
+## Installation<a name="installation"></a>
+
+> [!NOTE]
+>
+> To use this app, you need to have [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) installed and the [Mumble Service](https://allianceauth.readthedocs.io/en/latest/features/services/mumble.html) enabled.
+
+### Step 1: Install the App<a name="step-1-install-the-app"></a>
+
+Install the app using pip:
+
+```shell
+pip install aa-mumble-quick-connect
+```
+
+### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings"></a>
+
+Add the app to your `INSTALLED_APPS` in your `local.py`:
+
+```python
+INSTALLED_APPS += [
+    "mumble_quick_connect",  # https://github.com/ppfeufer/aa-mumble-quick-connect
+]
+```
+
+### Step 3: Finalizing the Installation<a name="step-3-finalizing-the-installation"></a>
+
+Run the migrations:
+
+```shell
+python manage.py migrate mumble_quick_connect
+```
+
+Run the static files collection:
+
+```shell
+python manage.py collectstatic --noinput
+```
+
+Restart supervisor:
+
+```shell
+sudo systemctl restart supervisor.service
+```
+
+## Permissions<a name="permissions"></a>
+
+The app comes with a default permission `aa_mumble_quick_connect | general | Can access this app` that allows
+users to view the Mumble Quick Connect page.
+
+## Changelog<a name="changelog"></a>
+
+See [CHANGELOG.md](https://github.com/ppfeufer/aa-mumble-quick-connect/blob/master/CHANGELOG.md) for a list of changes.
+
+## Translation Status<a name="translation-status"></a>
+
+[![Translation status](https://weblate.ppfeufer.de/widget/alliance-auth-apps/aa-mumble-quick-connect/multi-auto.svg)](https://weblate.ppfeufer.de/engage/alliance-auth-apps/)
+
+Do you want to help translate this app into your language or improve the existing
+translation? - [Join our team of translators][weblate engage]!
+
+## Contributing<a name="contributing"></a>
+
+Do you want to contribute to this project? That's cool!
+
+Please make sure to read the [Contribution Guidelines](https://github.com/ppfeufer/aa-mumble-quick-connect/blob/master/CONTRIBUTING.md).\
+(I promise, it's not much, just some basics)
+
+<!-- Links -->
+
+[weblate engage]: https://weblate.ppfeufer.de/engage/alliance-auth-apps/ "Weblate Translations"

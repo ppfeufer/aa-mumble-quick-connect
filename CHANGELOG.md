@@ -40,3 +40,7 @@ Section Order:
 ### Removed
 ### Security
 -->
+
+## [0.0.1] - 2025-02-13
+
+### First official release.
