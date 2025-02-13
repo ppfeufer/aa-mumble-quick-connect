@@ -41,6 +41,8 @@ Section Order:
 ### Security
 -->
 
+## [0.0.2] - 2025-02-13
+
 ### Changed
 
 - Migrations consolidated
