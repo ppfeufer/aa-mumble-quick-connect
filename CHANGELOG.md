@@ -41,6 +41,8 @@ Section Order:
 ### Security
 -->
 
+## [0.0.3] - 2025-02-13
+
 ### Added
 
 - Section highlight via link (Thanks @pvyParts for the idea!)
