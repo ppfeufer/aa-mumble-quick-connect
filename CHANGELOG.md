@@ -41,6 +41,10 @@ Section Order:
 ### Security
 -->
 
+### Added
+
+- Section highlight via link (Thanks @pvyParts for the idea!)
+
 ## [0.0.2] - 2025-02-13
 
 ### Changed
