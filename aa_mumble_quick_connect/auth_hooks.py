@@ -11,6 +11,7 @@ from allianceauth.services.hooks import MenuItemHook, UrlHook
 
 # AA Mumble Quick Connect
 from aa_mumble_quick_connect import urls
+from aa_mumble_quick_connect.dependency_checks import mumble_service_installed
 
 
 class AaMumbleQuickConnectMenuItem(MenuItemHook):
@@ -33,10 +34,13 @@ class AaMumbleQuickConnectMenuItem(MenuItemHook):
         Render the menu item
         """
 
-        if request.user.has_perm(
-            "aa_mumble_quick_connect.basic_access"
-        ) and request.user.has_perm("mumble.access_mumble"):
-            return MenuItemHook.render(self=self, request=request)
+        if mumble_service_installed():
+            if request.user.has_perm(
+                "aa_mumble_quick_connect.basic_access"
+            ) and request.user.has_perm("mumble.access_mumble"):
+                return MenuItemHook.render(self=self, request=request)
+
+            return ""
 
         return ""
 

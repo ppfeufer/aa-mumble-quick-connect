@@ -6,7 +6,7 @@ Test auth_hooks
 from http import HTTPStatus
 
 # Django
-from django.test import TestCase
+from django.test import TestCase, modify_settings
 from django.urls import reverse
 
 # Alliance Auth (External Libs)
@@ -66,6 +66,7 @@ class TestAccess(TestCase):
 
         cls.header_top = '<div class="navbar-brand">Mumble Quick Connect</div>'
 
+    @modify_settings(INSTALLED_APPS={"append": "allianceauth.services.modules.mumble"})
     def test_access_for_user_with_permission(self):
         """
         Test access for user with permission
@@ -88,6 +89,7 @@ class TestAccess(TestCase):
             needle=self.header_top, haystack=response_content_to_str(response)
         )
 
+    @modify_settings(INSTALLED_APPS={"append": "allianceauth.services.modules.mumble"})
     def test_access_for_user_with_just_mumble_permission(self):
         """
         Test access for user with just mumble permission
@@ -110,6 +112,7 @@ class TestAccess(TestCase):
             member=self.header_top, container=response_content_to_str(response)
         )
 
+    @modify_settings(INSTALLED_APPS={"append": "allianceauth.services.modules.mumble"})
     def test_access_for_user_with_just_aa_mumble_quick_connect_permission(self):
         """
         Test access for user with just aa_mumble_quick_connect permission
@@ -132,6 +135,7 @@ class TestAccess(TestCase):
             member=self.header_top, container=response_content_to_str(response)
         )
 
+    @modify_settings(INSTALLED_APPS={"append": "allianceauth.services.modules.mumble"})
     def test_access_for_user_without_permission(self):
         """
         Test access for user without permission

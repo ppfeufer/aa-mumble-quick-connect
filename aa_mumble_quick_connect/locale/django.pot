@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-02-13 03:18+0100\n"
+"POT-Creation-Date: 2025-02-13 12:12+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: aa_mumble_quick_connect/auth_hooks.py:25
+#: aa_mumble_quick_connect/auth_hooks.py:26
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:10
 msgid "Mumble Quick Connect"
@@ -56,10 +56,14 @@ msgstr ""
 msgid "Mumble Links"
 msgstr ""
 
-#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:14
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:15
 msgid ""
 "You don't have your Mumble service set up. Please go to the services page "
 "and activate the Mumble service."
+msgstr ""
+
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:20
+msgid "Mumble service is not installed!"
 msgstr ""
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:10

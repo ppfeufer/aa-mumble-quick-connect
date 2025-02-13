@@ -6,7 +6,7 @@ Test auth_hooks
 from http import HTTPStatus
 
 # Django
-from django.test import TestCase
+from django.test import TestCase, modify_settings
 from django.urls import reverse
 
 # Alliance Auth (External Libs)
@@ -64,9 +64,10 @@ class TestHooks(TestCase):
 
         self.client.force_login(user=user)
 
+    @modify_settings(INSTALLED_APPS={"append": "allianceauth.services.modules.mumble"})
     def test_render_hook_success(self):
         """
-        Test should show the link to the app
+        Test should show the link to the app for users with the correct permissions
 
         :return:
         :rtype:
@@ -79,15 +80,32 @@ class TestHooks(TestCase):
         self.assertEqual(first=response.status_code, second=HTTPStatus.OK)
         self.assertContains(response=response, text=self.html_menu, html=True)
 
+    @modify_settings(INSTALLED_APPS={"append": "allianceauth.services.modules.mumble"})
     def test_render_hook_fail(self):
         """
-        Test should not show the link to the app
+        Test should not show the link to the app for users without the correct permissions
 
         :return:
         :rtype:
         """
 
         self.login(user=self.user_1002)
+
+        response = self.client.get(path=reverse(viewname="authentication:dashboard"))
+
+        self.assertEqual(first=response.status_code, second=HTTPStatus.OK)
+        self.assertNotContains(response=response, text=self.html_menu, html=True)
+
+    @modify_settings(INSTALLED_APPS={"remove": "allianceauth.services.modules.mumble"})
+    def test_mumble_service_not_installed(self):
+        """
+        Test should not show the link to the app when the Mumble service is not installed
+
+        :return:
+        :rtype:
+        """
+
+        self.login(user=self.user_1001)
 
         response = self.client.get(path=reverse(viewname="authentication:dashboard"))
 
