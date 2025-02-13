@@ -4,10 +4,15 @@
 
 {% if channels_without_sections %}
     <div class="col-sm-6 col-lg-4 mb-3">
-        <div class="card card-primary">
-            <div class="card-header">
+        <div id="section-uncategorized" class="card card-primary{% if request.GET.section == 'uncategorized' %} border-success{% endif %}">
+            <div class="card-header{% if request.GET.section == 'uncategorized' %} bg-success{% endif %}">
                 <div class="card-title">
-                    {% translate "Uncategorized" %}
+                    <span>{% translate "Uncategorized" %}</span>
+                    <span class="float-end">
+                        <a href="{% url "aa_mumble_quick_connect:index" %}?section=uncategorized">
+                            <i class="fa-solid fa-link"></i>
+                        </a>
+                    </span>
                 </div>
             </div>
 

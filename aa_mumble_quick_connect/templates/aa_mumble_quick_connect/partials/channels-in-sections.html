@@ -5,9 +5,16 @@
     {% for section in channels_in_sections %}
         {% if section.mumble_links.count %}
             <div class="col-sm-6 col-lg-4 mb-3">
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <div class="card-title">{{ section.name }}</div>
+                <div id="section-{{ section.name|slugify }}" class="card card-primary{% if request.GET.section == section.name|slugify %} border-success{% endif %}">
+                    <div class="card-header{% if request.GET.section == section.name|slugify %} bg-success{% endif %}">
+                        <div class="card-title">
+                            <span>{{ section.name }}</span>
+                            <span class="float-end">
+                                <a href="{% url "aa_mumble_quick_connect:index" %}?section={{ section.name|slugify }}">
+                                    <i class="fa-solid fa-link"></i>
+                                </a>
+                            </span>
+                        </div>
                     </div>
 
                     <div class="card-body">
