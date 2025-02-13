@@ -41,6 +41,12 @@ Section Order:
 ### Security
 -->
 
+## [0.0.4] - 2025-02-13
+
+### Changed
+
+- Include section highlight in the link properly, instead of just being an option
+
 ## [0.0.3] - 2025-02-13
 
 ### Added

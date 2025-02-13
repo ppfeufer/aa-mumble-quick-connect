@@ -14,11 +14,16 @@ from aa_mumble_quick_connect.models import MumbleLink, Section
 @login_required
 @permission_required("aa_mumble_quick_connect.basic_access")
 @permission_required("mumble.access_mumble")
-def index(request: WSGIRequest) -> HttpResponse:
+def index(request: WSGIRequest, section: str = None) -> HttpResponse:
     """
     Index view
-    :param request:
-    :return:
+
+    :param request: The request
+    :type request: WSGIRequest
+    :param section: The section (optional)
+    :type section: str
+    :return: The response
+    :rtype: HttpResponse
     """
 
     channels_in_sections = Section.objects.prefetch_related("mumble_links").all()
@@ -28,6 +33,7 @@ def index(request: WSGIRequest) -> HttpResponse:
         "mumble_service_installed": mumble_service_installed(),
         "channels_in_sections": channels_in_sections,
         "channels_without_sections": channels_without_sections,
+        "section_highlight": section,
     }
 
     return render(
