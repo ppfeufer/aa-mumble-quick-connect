@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-02-13 12:23+0100\n"
-"PO-Revision-Date: 2025-02-13 11:37+0000\n"
+"POT-Creation-Date: 2025-02-13 23:01+0100\n"
+"PO-Revision-Date: 2025-02-13 22:08+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
 "Language-Team: German <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/de/>\n"
 "Language: de\n"
@@ -75,3 +75,11 @@ msgstr "Mumble Service ist nicht installiert!"
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:10
 msgid "Uncategorized"
 msgstr "Unkategorisiert"
+
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/footer/app-translation-footer.html:5
+msgid "Do you want to help translate this app into your language or improve the existing translation?"
+msgstr "Du möchtest helfen diese App in Deine Sprache zu übersetzen oder die bestehende Übersetzung verbessern?"
+
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/footer/app-translation-footer.html:8
+msgid "Join our team of translators!"
+msgstr "Tritt unserm Team von Übersetzern bei!"
