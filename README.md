@@ -62,7 +62,7 @@ Add the app to your `INSTALLED_APPS` in your `local.py`:
 
 ```python
 INSTALLED_APPS += [
-    "mumble_quick_connect",  # https://github.com/ppfeufer/aa-mumble-quick-connect
+    "aa_mumble_quick_connect",  # https://github.com/ppfeufer/aa-mumble-quick-connect
 ]
 ```
 
