@@ -1,22 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
-#, fuzzy
+# Peter Pfeufer <info@ppfeufer.de>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-02-13 12:23+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2025-02-13 23:01+0100\n"
+"PO-Revision-Date: 2025-02-13 22:08+0000\n"
+"Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
+"Language-Team: Japanese <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: aa_mumble_quick_connect/auth_hooks.py:26
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
@@ -31,7 +30,7 @@ msgstr ""
 
 #: aa_mumble_quick_connect/models.py:44
 msgid "Can access this app"
-msgstr ""
+msgstr "このアプリにアクセス可能です"
 
 #: aa_mumble_quick_connect/models.py:53
 msgid "Name of the section"
@@ -75,4 +74,12 @@ msgstr ""
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:10
 msgid "Uncategorized"
+msgstr ""
+
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/footer/app-translation-footer.html:5
+msgid "Do you want to help translate this app into your language or improve the existing translation?"
+msgstr ""
+
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/footer/app-translation-footer.html:8
+msgid "Join our team of translators!"
 msgstr ""
