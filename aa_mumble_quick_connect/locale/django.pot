@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-02-13 12:12+0100\n"
+"POT-Creation-Date: 2025-02-13 12:23+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,11 @@ msgstr ""
 
 #: aa_mumble_quick_connect/models.py:26
 #, python-brace-format
-msgid "Your Mumble channel URL must start with '{mumble_base_url}'"
+msgid "The Mumble channel URL must start with '{mumble_base_url}'"
+msgstr ""
+
+#: aa_mumble_quick_connect/models.py:44
+msgid "Can access this app"
 msgstr ""
 
 #: aa_mumble_quick_connect/models.py:53
@@ -40,19 +44,23 @@ msgstr ""
 msgid "Sections"
 msgstr ""
 
-#: aa_mumble_quick_connect/models.py:83
-msgid "Name of the Mumble server/channel"
+#: aa_mumble_quick_connect/models.py:81
+msgid "Section the Mumble channel belongs to. (Optional)"
 msgstr ""
 
-#: aa_mumble_quick_connect/models.py:88
+#: aa_mumble_quick_connect/models.py:83
+msgid "Name of the Mumble channel"
+msgstr ""
+
+#: aa_mumble_quick_connect/models.py:87
 msgid "URL to the channel"
 msgstr ""
 
-#: aa_mumble_quick_connect/models.py:97
+#: aa_mumble_quick_connect/models.py:96
 msgid "Mumble Link"
 msgstr ""
 
-#: aa_mumble_quick_connect/models.py:98
+#: aa_mumble_quick_connect/models.py:97
 msgid "Mumble Links"
 msgstr ""
 
