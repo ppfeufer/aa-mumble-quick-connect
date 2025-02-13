@@ -73,6 +73,6 @@ class TestMumbleLink(TestCase):
 
         with self.assertRaisesMessage(
             expected_exception=ValidationError,
-            expected_message=f"Your Mumble channel URL must start with '{expected_mumble_base_url}'",
+            expected_message=f"The Mumble channel URL must start with '{expected_mumble_base_url}'",
         ):
             validate_mumble_url("http://example.com")
