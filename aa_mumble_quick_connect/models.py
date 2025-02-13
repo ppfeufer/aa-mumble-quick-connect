@@ -23,7 +23,7 @@ def validate_mumble_url(url: str):
 
     if not url.startswith(mumble_base_url):
         raise ValidationError(
-            _(f"Your Mumble channel URL must start with '{mumble_base_url}'")
+            _(f"The Mumble channel URL must start with '{mumble_base_url}'")
         )
 
     return url
@@ -41,7 +41,7 @@ class General(models.Model):
 
         managed = False
         default_permissions = ()
-        permissions = (("basic_access", "Can access this app"),)
+        permissions = (("basic_access", _("Can access this app")),)
 
 
 class Section(models.Model):
@@ -78,10 +78,9 @@ class MumbleLink(models.Model):
         verbose_name=_("Section"),
         null=True,
         blank=True,
+        help_text=_("Section the Mumble channel belongs to. (Optional)"),
     )
-    name = models.CharField(
-        max_length=255, help_text=_("Name of the Mumble server/channel")
-    )
+    name = models.CharField(max_length=255, help_text=_("Name of the Mumble channel"))
     url = models.CharField(
         max_length=255,
         validators=[validate_mumble_url],
