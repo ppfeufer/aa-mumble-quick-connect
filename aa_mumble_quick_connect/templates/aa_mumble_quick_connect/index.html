@@ -3,7 +3,7 @@
 {% load i18n %}
 {% load humanize %}
 
-{% block details %}
+{% block aa_mumble_quick_connect_body %}
     {% if mumble_service_installed %}
         {% if request.user.mumble %}
             <div class="row mb-3" data-masonry='{"percentPosition": true }'>
@@ -20,11 +20,8 @@
             {% translate "Mumble service is not installed!" %}
         </div>
     {% endif %}
-{% endblock %}
+{% endblock aa_mumble_quick_connect_body %}
 
 {% block extra_javascript %}
     {% include "aa_mumble_quick_connect/bundles/masonry-layout-js.html" %}
-{% endblock %}
-
-{% block extra_css %}
-{% endblock %}
+{% endblock extra_javascript %}
