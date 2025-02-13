@@ -61,6 +61,7 @@ if os.environ.get("USE_MYSQL", True) is True:
 
 # Add any additional apps to this list.
 INSTALLED_APPS += [
+    "allianceauth.services.modules.mumble",
     PACKAGE,
 ]
 
@@ -117,3 +118,4 @@ DEFAULT_FROM_EMAIL = ""
 #######################################
 # Add any custom settings below here. #
 #######################################
+MUMBLE_URL = "mumble://example.com"

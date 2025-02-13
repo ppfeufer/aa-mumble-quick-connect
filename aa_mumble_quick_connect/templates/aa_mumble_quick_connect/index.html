@@ -4,22 +4,21 @@
 {% load humanize %}
 
 {% block details %}
-    <div class="card card-primary">
-        <div class="card-header">
-            <div class="card-title">{% translate "Headline" %}</div>
+    {% if request.user.mumble %}
+        <div class="row mb-3" data-masonry='{"percentPosition": true }'>
+            {% include "aa_mumble_quick_connect/partials/channels-in-sections.html" %}
+            {% include "aa_mumble_quick_connect/partials/channels-without-sections.html" %}
         </div>
-
-        <div class="card-body">
-            {{ text }}
+    {% else %}
+        <div class="alert alert-warning">
+            {% translate "You don't have your Mumble service set up. Please go to the services page and activate the Mumble service." %}
         </div>
-    </div>
+    {% endif %}
 {% endblock %}
 
 {% block extra_javascript %}
+    {% include "aa_mumble_quick_connect/bundles/masonry-layout-js.html" %}
 {% endblock %}
 
 {% block extra_css %}
-{% endblock %}
-
-{% block extra_script %}
 {% endblock %}

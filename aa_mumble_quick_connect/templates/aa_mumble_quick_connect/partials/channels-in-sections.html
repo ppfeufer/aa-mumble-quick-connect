@@ -1,0 +1,36 @@
+{% load static %}
+{% load aa_mumble_quick_connect %}
+
+{% if channels_in_sections %}
+    {% for section in channels_in_sections %}
+        {% if section.mumble_links.count %}
+            <div class="col-sm-6 col-lg-4 mb-3">
+                <div class="card card-primary">
+                    <div class="card-header">
+                        <div class="card-title">{{ section.name }}</div>
+                    </div>
+
+                    <div class="card-body">
+                        <ul class="list-group">
+                            {% for channel in section.mumble_links.all %}
+                                <li class="list-group-item">
+                                    <a class="btn btn-secondary w-100" href="{% aa_mumble_quick_connect_link channel.url request.user.mumble.username %}">
+                                        <img
+                                            src="{% static 'aa_mumble_quick_connect/images/mumble-icon.png' %}"
+                                            alt="Mumble"
+                                            height="32"
+                                            width="32"
+                                            style="margin: 15px;"
+                                        >
+
+                                        <span>{{ channel.name }}</span>
+                                    </a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
+    {% endfor %}
+{% endif %}

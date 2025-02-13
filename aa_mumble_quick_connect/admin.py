@@ -26,4 +26,4 @@ class MumbleLinkAdmin(admin.ModelAdmin):
     """
 
     list_display = ("name", "url", "section")
-    ordering = ("section",)
+    ordering = ("section", "name")
