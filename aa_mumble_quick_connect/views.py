@@ -7,6 +7,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # AA Mumble Quick Connect
+from aa_mumble_quick_connect.dependency_checks import mumble_service_installed
 from aa_mumble_quick_connect.models import MumbleLink, Section
 
 
@@ -24,6 +25,7 @@ def index(request: WSGIRequest) -> HttpResponse:
     channels_without_sections = MumbleLink.objects.filter(section__isnull=True)
 
     context = {
+        "mumble_service_installed": mumble_service_installed(),
         "channels_in_sections": channels_in_sections,
         "channels_without_sections": channels_without_sections,
     }
