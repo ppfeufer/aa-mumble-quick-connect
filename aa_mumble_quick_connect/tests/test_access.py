@@ -33,11 +33,26 @@ class TestAccess(TestCase):
         cls.user_1001 = create_fake_user(
             character_id=1001,
             character_name="Jean Luc Picard",
-            permissions=["aa_mumble_quick_connect.basic_access"],
+            permissions=[
+                "aa_mumble_quick_connect.basic_access",
+                "mumble.access_mumble",
+            ],
         )
 
         cls.user_1002 = create_fake_user(
-            character_id=1002, character_name="Wesley Crusher"
+            character_id=1002,
+            character_name="William Riker",
+            permissions=["mumble.access_mumble"],
+        )
+
+        cls.user_1003 = create_fake_user(
+            character_id=1003,
+            character_name="Worf",
+            permissions=["aa_mumble_quick_connect.basic_access"],
+        )
+
+        cls.user_1004 = create_fake_user(
+            character_id=1004, character_name="Wesley Crusher"
         )
 
         cls.html_menu = f"""
@@ -73,6 +88,50 @@ class TestAccess(TestCase):
             needle=self.header_top, haystack=response_content_to_str(response)
         )
 
+    def test_access_for_user_with_just_mumble_permission(self):
+        """
+        Test access for user with just mumble permission
+
+        :return:
+        :rtype:
+        """
+
+        self.client.force_login(user=self.user_1002)
+
+        response = self.client.get(
+            path=reverse(viewname="aa_mumble_quick_connect:index")
+        )
+
+        self.assertEqual(first=response.status_code, second=HTTPStatus.FOUND)
+        self.assertNotIn(
+            member=self.html_menu, container=response_content_to_str(response)
+        )
+        self.assertNotIn(
+            member=self.header_top, container=response_content_to_str(response)
+        )
+
+    def test_access_for_user_with_just_aa_mumble_quick_connect_permission(self):
+        """
+        Test access for user with just aa_mumble_quick_connect permission
+
+        :return:
+        :rtype:
+        """
+
+        self.client.force_login(user=self.user_1003)
+
+        response = self.client.get(
+            path=reverse(viewname="aa_mumble_quick_connect:index")
+        )
+
+        self.assertEqual(first=response.status_code, second=HTTPStatus.FOUND)
+        self.assertNotIn(
+            member=self.html_menu, container=response_content_to_str(response)
+        )
+        self.assertNotIn(
+            member=self.header_top, container=response_content_to_str(response)
+        )
+
     def test_access_for_user_without_permission(self):
         """
         Test access for user without permission
@@ -81,7 +140,7 @@ class TestAccess(TestCase):
         :rtype:
         """
 
-        self.client.force_login(user=self.user_1002)
+        self.client.force_login(user=self.user_1004)
 
         response = self.client.get(
             path=reverse(viewname="aa_mumble_quick_connect:index")

@@ -33,7 +33,10 @@ class TestHooks(TestCase):
         cls.user_1001 = create_fake_user(
             character_id=1001,
             character_name="Jean Luc Picard",
-            permissions=["aa_mumble_quick_connect.basic_access"],
+            permissions=[
+                "aa_mumble_quick_connect.basic_access",
+                "mumble.access_mumble",
+            ],
         )
 
         cls.user_1002 = create_fake_user(

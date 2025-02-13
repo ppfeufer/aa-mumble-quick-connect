@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-02-13 00:41+0100\n"
+"POT-Creation-Date: 2025-02-13 03:18+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,12 @@ msgstr ""
 msgid "Mumble Links"
 msgstr ""
 
-#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:9
-msgid "Headline"
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:14
+msgid ""
+"You don't have your Mumble service set up. Please go to the services page "
+"and activate the Mumble service."
+msgstr ""
+
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:10
+msgid "Uncategorized"
 msgstr ""

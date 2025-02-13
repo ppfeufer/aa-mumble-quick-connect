@@ -33,7 +33,9 @@ class AaMumbleQuickConnectMenuItem(MenuItemHook):
         Render the menu item
         """
 
-        if request.user.has_perm("aa_mumble_quick_connect.basic_access"):
+        if request.user.has_perm(
+            "aa_mumble_quick_connect.basic_access"
+        ) and request.user.has_perm("mumble.access_mumble"):
             return MenuItemHook.render(self=self, request=request)
 
         return ""
