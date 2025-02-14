@@ -24,4 +24,19 @@
 
 {% block extra_javascript %}
     {% include "aa_mumble_quick_connect/bundles/masonry-layout-js.html" %}
+
+    <script>
+    $(document).ready(() => {
+        // Scroll the highlighted element into view if needed …
+        const element = document.getElementById('section-{{ section_highlight }}');
+
+        if (element) {
+            element.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest",
+                inline: "nearest"
+            });
+        }
+    });
+    </script>
 {% endblock extra_javascript %}

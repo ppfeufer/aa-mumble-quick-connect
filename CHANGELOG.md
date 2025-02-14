@@ -41,6 +41,12 @@ Section Order:
 ### Security
 -->
 
+## [0.0.6] - 2025-02-14
+
+### Added
+
+- Scroll to view behavior for the link highlight, if the highlighted section is not in the viewport
+
 ## [0.0.5] - 2025-02-14
 
 ### Added
