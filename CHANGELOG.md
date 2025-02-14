@@ -41,6 +41,10 @@ Section Order:
 ### Security
 -->
 
+### Added
+
+- Option to disable link verification (Suggested by @pvyParts)
+
 ## [0.0.4] - 2025-02-13
 
 ### Changed

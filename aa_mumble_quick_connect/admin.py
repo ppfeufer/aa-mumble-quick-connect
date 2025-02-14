@@ -25,5 +25,5 @@ class MumbleLinkAdmin(admin.ModelAdmin):
     MumbleLinkAdmin
     """
 
-    list_display = ("name", "url", "section")
+    list_display = ("name", "section", "url", "disable_url_verification")
     ordering = ("section", "name")
