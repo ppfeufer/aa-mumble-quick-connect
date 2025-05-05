@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Peter Pfeufer <info@ppfeufer.de>, 2025.
+# SiO4 <hohoit0078@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-04-09 12:20+0200\n"
-"PO-Revision-Date: 2025-02-13 22:08+0000\n"
-"Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
+"POT-Creation-Date: 2025-05-05 23:29+0200\n"
+"PO-Revision-Date: 2025-04-28 07:24+0000\n"
+"Last-Translator: SiO4 <hohoit0078@gmail.com>\n"
 "Language-Team: Korean <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/ko/>\n"
 "Language: ko_KR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.11.1\n"
 
 #: aa_mumble_quick_connect/auth_hooks.py:26
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
@@ -25,7 +26,7 @@ msgstr ""
 
 #: aa_mumble_quick_connect/models.py:26
 msgid "The Mumble channel URL must start with \"mumble://\""
-msgstr ""
+msgstr "멈블 채널 주소는 \"mumble://\"로 시작합니다."
 
 #: aa_mumble_quick_connect/models.py:36
 #, python-brace-format
@@ -38,7 +39,7 @@ msgstr "서비스에 접근할 수 있습니다"
 
 #: aa_mumble_quick_connect/models.py:65
 msgid "Name of the section"
-msgstr ""
+msgstr "섹션 이름"
 
 #: aa_mumble_quick_connect/models.py:74 aa_mumble_quick_connect/models.py:97
 msgid "Section"
@@ -78,7 +79,7 @@ msgstr ""
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:15
 msgid "You don't have your Mumble service set up. Please go to the services page and activate the Mumble service."
-msgstr ""
+msgstr "멈블 서비스가 준비되지 않았습니다. 이전 페이지로 돌아가 멈블 서비스를 활정화하십시오."
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:20
 msgid "Mumble service is not installed!"
