@@ -41,6 +41,10 @@ Section Order:
 ### Security
 -->
 
+### Change
+
+- Early return for access checks (Improves performance and readability)
+
 ## [0.0.8] - 2025-05-05
 
 ### Changed

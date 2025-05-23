@@ -23,7 +23,7 @@ class AaMumbleQuickConnectMenuItem(MenuItemHook):
         # setup menu entry for sidebar
         MenuItemHook.__init__(
             self=self,
-            text=_("Mumble Quick Connect"),
+            text=str(_("Mumble Quick Connect")),
             classes="fa-solid fa-headphones-simple",
             url_name="aa_mumble_quick_connect:index",
             navactive=["aa_mumble_quick_connect:"],
@@ -34,13 +34,13 @@ class AaMumbleQuickConnectMenuItem(MenuItemHook):
         Render the menu item
         """
 
-        if mumble_service_installed():
-            if request.user.has_perm(
-                "aa_mumble_quick_connect.basic_access"
-            ) and request.user.has_perm("mumble.access_mumble"):
-                return MenuItemHook.render(self=self, request=request)
-
+        if not mumble_service_installed():
             return ""
+
+        if request.user.has_perm(
+            "aa_mumble_quick_connect.basic_access"
+        ) and request.user.has_perm("mumble.access_mumble"):
+            return MenuItemHook.render(self=self, request=request)
 
         return ""
 
