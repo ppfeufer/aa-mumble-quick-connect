@@ -106,7 +106,8 @@ INSTALLED_APPS += [
 #### Step 3: Build Auth and Restart Your Containers<a name="step-3-build-auth-and-restart-your-containers"></a>
 
 ```shell
-docker compose restart --build
+docker compose build --no-cache
+docker compose --env-file=.env up -d
 ```
 
 #### Step 4: Finalizing the Installation<a name="step-4-finalizing-the-installation"></a>
@@ -115,6 +116,7 @@ Copy static files and run migrations
 
 ```shell
 docker compose exec allianceauth_gunicorn bash
+
 auth collectstatic
 auth migrate
 ```
