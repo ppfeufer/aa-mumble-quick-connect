@@ -41,6 +41,10 @@ Section Order:
 ### Security
 -->
 
+### Added
+
+- Install instructions for Docker installations
+
 ### Change
 
 - Early return for access checks (Improves performance and readability)

@@ -24,9 +24,15 @@ ______________________________________________________________________
 - [Screenshots](#screenshots)
   - [Mumble Quick Connect](#mumble-quick-connect)
 - [Installation](#installation)
-  - [Step 1: Install the App](#step-1-install-the-app)
-  - [Step 2: Update Your AA Settings](#step-2-update-your-aa-settings)
-  - [Step 3: Finalizing the Installation](#step-3-finalizing-the-installation)
+  - [Bare Metal Installation](#bare-metal-installation)
+    - [Step 1: Install the App](#step-1-install-the-app)
+    - [Step 2: Update Your AA Settings](#step-2-update-your-aa-settings)
+    - [Step 3: Finalizing the Installation](#step-3-finalizing-the-installation)
+  - [Docker Installation](#docker-installation)
+    - [Step 1: Add the App](#step-1-add-the-app)
+    - [Step 2: Update Your AA Settings](#step-2-update-your-aa-settings-1)
+    - [Step 3: Build Auth and Restart Your Containers](#step-3-build-auth-and-restart-your-containers)
+    - [Step 4: Finalizing the Installation](#step-4-finalizing-the-installation)
 - [Permissions](#permissions)
 - [Changelog](#changelog)
 - [Translation Status](#translation-status)
@@ -46,9 +52,11 @@ ______________________________________________________________________
 
 > [!NOTE]
 >
-> To use this app, you need to have [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) installed and the [Mumble Service](https://allianceauth.readthedocs.io/en/latest/features/services/mumble.html) enabled.
+> To use this app, you need to have [Alliance Auth](https://gitlab.com/allianceauth/allianceauth) installed, and the [Mumble Service](https://allianceauth.readthedocs.io/en/latest/features/services/mumble.html) enabled.
 
-### Step 1: Install the App<a name="step-1-install-the-app"></a>
+### Bare Metal Installation<a name="bare-metal-installation"></a>
+
+#### Step 1: Install the App<a name="step-1-install-the-app"></a>
 
 Install the app using pip:
 
@@ -56,7 +64,7 @@ Install the app using pip:
 pip install aa-mumble-quick-connect
 ```
 
-### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings"></a>
+#### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings"></a>
 
 Add the app to your `INSTALLED_APPS` in your `local.py`:
 
@@ -66,24 +74,49 @@ INSTALLED_APPS += [
 ]
 ```
 
-### Step 3: Finalizing the Installation<a name="step-3-finalizing-the-installation"></a>
+#### Step 3: Finalizing the Installation<a name="step-3-finalizing-the-installation"></a>
 
-Run the migrations:
+Copy static files and run migrations
 
 ```shell
 python manage.py migrate mumble_quick_connect
-```
-
-Run the static files collection:
-
-```shell
 python manage.py collectstatic --noinput
 ```
 
-Restart supervisor:
+### Docker Installation<a name="docker-installation"></a>
+
+#### Step 1: Add the App<a name="step-1-add-the-app"></a>
+
+Add the app to your `conf/requirements.txt`:
+
+```text
+aa-mumble-quick-connect==0.0.8
+```
+
+#### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings-1"></a>
+
+Add the app to your `INSTALLED_APPS` in your `conf/local.py`:
+
+```python
+INSTALLED_APPS += [
+    "aa_mumble_quick_connect",  # https://github.com/ppfeufer/aa-mumble-quick-connect
+]
+```
+
+#### Step 3: Build Auth and Restart Your Containers<a name="step-3-build-auth-and-restart-your-containers"></a>
 
 ```shell
-sudo systemctl restart supervisor.service
+docker compose restart --build
+```
+
+#### Step 4: Finalizing the Installation<a name="step-4-finalizing-the-installation"></a>
+
+Copy static files and run migrations
+
+```shell
+docker compose exec allianceauth_gunicorn bash
+auth collectstatic
+auth migrate
 ```
 
 ## Permissions<a name="permissions"></a>
