@@ -41,6 +41,8 @@ Section Order:
 ### Security
 -->
 
+## [0.0.9] - 2025-06-03
+
 ### Added
 
 - Install instructions for Docker installations
