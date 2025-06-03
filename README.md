@@ -90,7 +90,7 @@ python manage.py collectstatic --noinput
 Add the app to your `conf/requirements.txt`:
 
 ```text
-aa-mumble-quick-connect==0.0.8
+aa-mumble-quick-connect==0.0.9
 ```
 
 #### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings-1"></a>
