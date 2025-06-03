@@ -47,6 +47,7 @@ Section Order:
 
 ### Change
 
+- Use `django-sri` for Subresource Integrity (SRI) checks on static files
 - Early return for access checks (Improves performance and readability)
 
 ## [0.0.8] - 2025-05-05
