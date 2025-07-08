@@ -2,30 +2,31 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Peter Pfeufer <info@ppfeufer.de>, 2025.
+# Acia Saraki <ouss2412@live.fr>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-06-03 13:06+0200\n"
-"PO-Revision-Date: 2025-02-13 22:08+0000\n"
-"Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
+"POT-Creation-Date: 2025-07-08 13:48+0200\n"
+"PO-Revision-Date: 2025-06-18 19:24+0000\n"
+"Last-Translator: Acia Saraki <ouss2412@live.fr>\n"
 "Language-Team: French <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: aa_mumble_quick_connect/auth_hooks.py:26
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:10
 msgid "Mumble Quick Connect"
-msgstr ""
+msgstr "Mumble Connexion Rapide"
 
 #: aa_mumble_quick_connect/models.py:26
 msgid "The Mumble channel URL must start with \"mumble://\""
-msgstr ""
+msgstr "Le lien URL du channel Mumble doit commencer avec \"mumble://\""
 
 #: aa_mumble_quick_connect/models.py:36
 #, python-brace-format
@@ -78,11 +79,11 @@ msgstr ""
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:15
 msgid "You don't have your Mumble service set up. Please go to the services page and activate the Mumble service."
-msgstr ""
+msgstr "Votre service Mumble n'est pas configuré. Veuillez vous rendre sur la page des services et activer le service Mumble."
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:20
 msgid "Mumble service is not installed!"
-msgstr ""
+msgstr "Le service Mumble n'est pas configuré !"
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:10
 msgid "Uncategorized"

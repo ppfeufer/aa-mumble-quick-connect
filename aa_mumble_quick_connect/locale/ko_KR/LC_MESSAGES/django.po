@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-06-03 13:06+0200\n"
-"PO-Revision-Date: 2025-04-28 07:24+0000\n"
+"POT-Creation-Date: 2025-07-08 13:48+0200\n"
+"PO-Revision-Date: 2025-06-28 08:30+0000\n"
 "Last-Translator: SiO4 <hohoit0078@gmail.com>\n"
 "Language-Team: Korean <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/ko/>\n"
 "Language: ko_KR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #: aa_mumble_quick_connect/auth_hooks.py:26
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
@@ -43,7 +43,7 @@ msgstr "섹션 이름"
 
 #: aa_mumble_quick_connect/models.py:74 aa_mumble_quick_connect/models.py:97
 msgid "Section"
-msgstr ""
+msgstr "섹션"
 
 #: aa_mumble_quick_connect/models.py:75
 msgid "Sections"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: aa_mumble_quick_connect/models.py:102
 msgid "Name of the Mumble channel"
-msgstr ""
+msgstr "멈블 채널명"
 
 #: aa_mumble_quick_connect/models.py:105
 msgid "URL to the channel"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: aa_mumble_quick_connect/models.py:111
 msgid "If checked, the Mumble channel URL will not be verified against what is configured for this Auth instance when saving the link. Only use this if you are sure the URL is correct and the Mumble server is controlled by this Auth instance."
-msgstr ""
+msgstr "이 설정을 체크하면 링크를 저장할 때 이 Auth 인스턴스에 설정된 멈블 채널 주소와의 일치 여부를 확인하지 않습니다. 주소가 올바르며 멈블 서버가 이 Auth 인스턴스에서 관리되고 있는 것이 확실할 경우에만 이 옵션을 사용하십시오."
 
 #: aa_mumble_quick_connect/models.py:124
 msgid "Mumble Link"
