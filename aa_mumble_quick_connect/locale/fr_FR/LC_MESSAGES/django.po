@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # Peter Pfeufer <info@ppfeufer.de>, 2025.
 # Acia Saraki <ouss2412@live.fr>, 2025.
+# The “Devcutter” Guy <mick162534@gmail.com>, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-07-08 13:48+0200\n"
-"PO-Revision-Date: 2025-06-18 19:24+0000\n"
-"Last-Translator: Acia Saraki <ouss2412@live.fr>\n"
+"POT-Creation-Date: 2025-08-05 09:46+0200\n"
+"PO-Revision-Date: 2025-08-03 04:24+0000\n"
+"Last-Translator: The “Devcutter” Guy <mick162534@gmail.com>\n"
 "Language-Team: French <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/fr/>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #: aa_mumble_quick_connect/auth_hooks.py:26
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
@@ -31,7 +32,7 @@ msgstr "Le lien URL du channel Mumble doit commencer avec \"mumble://\""
 #: aa_mumble_quick_connect/models.py:36
 #, python-brace-format
 msgid "The Mumble channel URL must start with \"{mumble_base_url}\""
-msgstr ""
+msgstr "L’URL du canal Mumble doit commencer par \"{mumble_base_url}\""
 
 #: aa_mumble_quick_connect/models.py:56
 msgid "Can access this app"
@@ -39,11 +40,11 @@ msgstr "Peut accéder à cette application"
 
 #: aa_mumble_quick_connect/models.py:65
 msgid "Name of the section"
-msgstr ""
+msgstr "Nom de la section"
 
 #: aa_mumble_quick_connect/models.py:74 aa_mumble_quick_connect/models.py:97
 msgid "Section"
-msgstr ""
+msgstr "Section"
 
 #: aa_mumble_quick_connect/models.py:75
 msgid "Sections"
