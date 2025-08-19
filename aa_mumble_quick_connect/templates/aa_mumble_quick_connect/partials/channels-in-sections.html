@@ -22,13 +22,9 @@
                             {% for channel in section.mumble_links.all %}
                                 <li class="list-group-item">
                                     <a class="btn btn-secondary w-100" href="{% aa_mumble_quick_connect_link channel.url request.user.mumble.username %}">
-                                        <img
-                                            src="{% static 'aa_mumble_quick_connect/images/mumble-icon.png' %}"
-                                            alt="Mumble"
-                                            height="32"
-                                            width="32"
-                                            style="margin: 15px;"
-                                        >
+                                        <svg width="32" height="32" class="m-3">
+                                            <use href="#aa-mumble-logo"></use>
+                                        </svg>
 
                                         <span>{{ channel.name }}</span>
                                     </a>

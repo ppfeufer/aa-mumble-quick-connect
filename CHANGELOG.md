@@ -41,6 +41,10 @@ Section Order:
 ### Security
 -->
 
+### Changed
+
+- Use the SVG version of the Mumble logo, provided by Alliance Auth
+
 ## [0.0.11] - 2025-08-05
 
 ### Changed
