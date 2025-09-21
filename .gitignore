@@ -16,3 +16,4 @@ __pycache__
 alliance_auth.sqlite3
 
 /aa_mumble_quick_connect/locale/en/
+.make/myauth-path
