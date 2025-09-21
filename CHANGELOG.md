@@ -42,9 +42,11 @@ Section Order:
 
 <!-- Your changes go here -->
 
+## [1.0.0] - 2025-09-21
+
 ### Changed
 
-- Use the SVG version of the Mumble logo, provided by Alliance Auth
+- Use the SVG version of the Mumble logo provided by the Alliance Auth framework
 - Minimum requirements
   - Alliance Auth >= 4.10.0
 
@@ -137,6 +139,7 @@ Section Order:
 [0.0.7]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.6...v0.0.7 "v0.0.7"
 [0.0.8]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.7...v0.0.8 "v0.0.8"
 [0.0.9]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.8...v0.0.9 "v0.0.9"
-[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.12...HEAD "In Development"
+[1.0.0]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.12...v1.0.0 "v1.0.0"
+[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.0...HEAD "In Development"
 [keep a changelog]: http://keepachangelog.com/ "Keep a Changelog"
 [semantic versioning]: http://semver.org/ "Semantic Versioning"
