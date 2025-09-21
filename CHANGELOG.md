@@ -41,6 +41,12 @@ Section Order:
 ### Security
 -->
 
+### Changed
+
+- Use the SVG version of the Mumble logo, provided by Alliance Auth
+- Minimum requirements
+  - Alliance Auth >= 4.10.0
+
 ## [0.0.12] - 2025-09-02
 
 ### Changed
