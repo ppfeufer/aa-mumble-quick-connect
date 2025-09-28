@@ -16,4 +16,5 @@ __pycache__
 alliance_auth.sqlite3
 
 /aa_mumble_quick_connect/locale/en/
+.esi-compatibility-date
 .make/myauth-path
