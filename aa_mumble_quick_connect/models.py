@@ -33,7 +33,7 @@ def validate_mumble_url(url: str, disable_url_verification: bool = False) -> str
             raise ValidationError(
                 {
                     "url": _(
-                        _(f'The Mumble channel URL must start with "{mumble_base_url}"')
+                        f'The Mumble channel URL must start with "{mumble_base_url}"'
                     )
                 }
             )
@@ -137,13 +137,6 @@ class MumbleLink(models.Model):
     def clean(self):
         """
         Clean method
-
-        :param args: Arguments
-        :type args: tuple
-        :param kwargs: Keyword arguments
-        :type kwargs: dict
-        :return: None
-        :rtype: None
         """
 
         # Validate Mumble URL
