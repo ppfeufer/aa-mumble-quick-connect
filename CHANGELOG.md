@@ -46,6 +46,10 @@ Section Order:
 
 - Double translated string
 
+### Changed
+
+- Template tag improved
+
 ## [1.0.0] - 2025-09-21
 
 ### Changed
