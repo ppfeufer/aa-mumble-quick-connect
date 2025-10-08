@@ -42,6 +42,10 @@ Section Order:
 
 <!-- Your changes go here -->
 
+### Fixed
+
+- Double translated string
+
 ## [1.0.0] - 2025-09-21
 
 ### Changed
