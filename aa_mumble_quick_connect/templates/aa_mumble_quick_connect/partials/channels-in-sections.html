@@ -21,7 +21,7 @@
                         <ul class="list-group">
                             {% for channel in section.mumble_links.all %}
                                 <li class="list-group-item">
-                                    <a class="btn btn-secondary w-100" href="{% aa_mumble_quick_connect_link channel.url request.user.mumble.username %}">
+                                    <a class="btn btn-secondary w-100" href="{% aa_mumble_quick_connect_link channel.url request.user %}">
                                         <svg width="32" height="32" class="m-3">
                                             <use href="#aa-mumble-logo"></use>
                                         </svg>
