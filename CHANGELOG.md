@@ -45,6 +45,7 @@ Section Order:
 ### Fixed
 
 - Double translated string
+- Django `makemessages` doesn't seem to recognize f-strings anymore
 
 ### Changed
 

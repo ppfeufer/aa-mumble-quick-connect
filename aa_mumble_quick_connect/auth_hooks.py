@@ -2,15 +2,12 @@
 Hook into Alliance Auth
 """
 
-# Django
-from django.utils.translation import gettext_lazy as _
-
 # Alliance Auth
 from allianceauth import hooks
 from allianceauth.services.hooks import MenuItemHook, UrlHook
 
 # AA Mumble Quick Connect
-from aa_mumble_quick_connect import urls
+from aa_mumble_quick_connect import __title_translated__, urls
 from aa_mumble_quick_connect.dependency_checks import mumble_service_installed
 
 
@@ -23,7 +20,7 @@ class AaMumbleQuickConnectMenuItem(MenuItemHook):
         # setup menu entry for sidebar
         MenuItemHook.__init__(
             self=self,
-            text=str(_("Mumble Quick Connect")),
+            text=__title_translated__,
             classes="fa-solid fa-headphones-simple",
             url_name="aa_mumble_quick_connect:index",
             navactive=["aa_mumble_quick_connect:"],
