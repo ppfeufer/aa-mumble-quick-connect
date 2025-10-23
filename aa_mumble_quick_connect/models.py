@@ -33,8 +33,8 @@ def validate_mumble_url(url: str, disable_url_verification: bool = False) -> str
             raise ValidationError(
                 {
                     "url": _(
-                        f'The Mumble channel URL must start with "{mumble_base_url}"'
-                    )
+                        'The Mumble channel URL must start with "{mumble_base_url}"'
+                    ).format(mumble_base_url=mumble_base_url)
                 }
             )
 
