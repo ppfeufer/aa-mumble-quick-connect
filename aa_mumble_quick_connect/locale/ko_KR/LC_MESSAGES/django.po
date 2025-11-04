@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-09-02 07:16+0200\n"
-"PO-Revision-Date: 2025-06-28 08:30+0000\n"
+"POT-Creation-Date: 2025-11-04 13:09+0100\n"
+"PO-Revision-Date: 2025-10-25 13:38+0000\n"
 "Last-Translator: SiO4 <hohoit0078@gmail.com>\n"
 "Language-Team: Korean <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/ko/>\n"
 "Language: ko_KR\n"
@@ -16,13 +16,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.14\n"
 
-#: aa_mumble_quick_connect/auth_hooks.py:26
+#: aa_mumble_quick_connect/__init__.py:10
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:10
 msgid "Mumble Quick Connect"
-msgstr ""
+msgstr "멈블에 빠른 연결"
 
 #: aa_mumble_quick_connect/models.py:26
 msgid "The Mumble channel URL must start with \"mumble://\""
@@ -31,7 +31,7 @@ msgstr "멈블 채널 주소는 \"mumble://\"로 시작합니다."
 #: aa_mumble_quick_connect/models.py:36
 #, python-brace-format
 msgid "The Mumble channel URL must start with \"{mumble_base_url}\""
-msgstr ""
+msgstr "멈블 채널 주소는  \"{mumble_base_url}\"로 시작합니다."
 
 #: aa_mumble_quick_connect/models.py:56
 msgid "Can access this app"
@@ -71,15 +71,15 @@ msgstr "이 설정을 체크하면 링크를 저장할 때 이 Auth 인스턴스
 
 #: aa_mumble_quick_connect/models.py:124
 msgid "Mumble Link"
-msgstr ""
+msgstr "멈블 주소"
 
 #: aa_mumble_quick_connect/models.py:125
 msgid "Mumble Links"
-msgstr ""
+msgstr "멈블 주소 목록"
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:15
 msgid "You don't have your Mumble service set up. Please go to the services page and activate the Mumble service."
-msgstr "멈블 서비스가 준비되지 않았습니다. 이전 페이지로 돌아가 멈블 서비스를 활정화하십시오."
+msgstr "멈블 서비스가 준비되지 않았습니다. 이전 페이지로 돌아가 멈블 서비스를 활성화하십시오."
 
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:20
 msgid "Mumble service is not installed!"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect 0.0.1\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/aa-mumble-quick-connect/issues\n"
-"POT-Creation-Date: 2025-09-02 07:16+0200\n"
-"PO-Revision-Date: 2025-08-11 17:31+0000\n"
+"POT-Creation-Date: 2025-11-04 13:09+0100\n"
+"PO-Revision-Date: 2025-10-25 13:38+0000\n"
 "Last-Translator: hin0 <gabrieldaichi1201@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/ja/>\n"
 "Language: ja\n"
@@ -16,9 +16,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.14\n"
 
-#: aa_mumble_quick_connect/auth_hooks.py:26
+#: aa_mumble_quick_connect/__init__.py:10
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:6
 #: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/base.html:10
 msgid "Mumble Quick Connect"
@@ -26,12 +26,12 @@ msgstr "Mumbleショートカットボタン"
 
 #: aa_mumble_quick_connect/models.py:26
 msgid "The Mumble channel URL must start with \"mumble://\""
-msgstr ""
+msgstr "MumbleチャンネルのURLは\"mumble://\"が先頭である必要があります。"
 
 #: aa_mumble_quick_connect/models.py:36
 #, python-brace-format
 msgid "The Mumble channel URL must start with \"{mumble_base_url}\""
-msgstr ""
+msgstr "MumbleチャンネルのURLの先頭は \"{mumble_base_url}\"である必要があります。"
 
 #: aa_mumble_quick_connect/models.py:56
 msgid "Can access this app"
@@ -39,7 +39,7 @@ msgstr "このアプリにアクセス可能です"
 
 #: aa_mumble_quick_connect/models.py:65
 msgid "Name of the section"
-msgstr ""
+msgstr "セクションの名前"
 
 #: aa_mumble_quick_connect/models.py:74 aa_mumble_quick_connect/models.py:97
 msgid "Section"
