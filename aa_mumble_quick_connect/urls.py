@@ -6,7 +6,7 @@ from django.urls import path
 # AA Mumble Quick Connect
 from aa_mumble_quick_connect import views
 
-app_name: str = "aa_mumble_quick_connect"
+app_name: str = "aa_mumble_quick_connect"  # pylint: disable=invalid-name
 
 urlpatterns = [
     path(route="", view=views.index, name="index"),
