@@ -42,6 +42,8 @@ Section Order:
 
 <!-- Your changes go here -->
 
+## [1.0.1] - 2025-11-04
+
 ### Fixed
 
 - Double translated string
@@ -50,6 +52,7 @@ Section Order:
 ### Changed
 
 - Template tag improved
+- Translations updated
 
 ## [1.0.0] - 2025-09-21
 
@@ -149,6 +152,7 @@ Section Order:
 [0.0.8]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.7...v0.0.8 "v0.0.8"
 [0.0.9]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.8...v0.0.9 "v0.0.9"
 [1.0.0]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.12...v1.0.0 "v1.0.0"
-[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.0...HEAD "In Development"
+[1.0.1]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.0...v1.0.1 "v1.0.1"
+[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.1...HEAD "In Development"
 [keep a changelog]: http://keepachangelog.com/ "Keep a Changelog"
 [semantic versioning]: http://semver.org/ "Semantic Versioning"
