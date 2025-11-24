@@ -9,11 +9,11 @@ from http import HTTPStatus
 from django.test import TestCase, modify_settings
 from django.urls import reverse
 
-# Alliance Auth (External Libs)
-from app_utils.testing import create_fake_user
-
 # AA Mumble Quick Connect
-from aa_mumble_quick_connect.tests.utils import response_content_to_str
+from aa_mumble_quick_connect.tests.utils import (
+    create_fake_user,
+    response_content_to_str,
+)
 
 
 class TestAccess(TestCase):
