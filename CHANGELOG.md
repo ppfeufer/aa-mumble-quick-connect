@@ -42,6 +42,12 @@ Section Order:
 
 <!-- Your changes go here -->
 
+## [1.1.0] - 2025-12-02
+
+### Changed
+
+- Translations updated
+
 ### Removed
 
 - `allianceauth-app-utils` as dependency
@@ -157,6 +163,7 @@ Section Order:
 [0.0.9]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.8...v0.0.9 "v0.0.9"
 [1.0.0]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v0.0.12...v1.0.0 "v1.0.0"
 [1.0.1]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.0...v1.0.1 "v1.0.1"
-[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.1...HEAD "In Development"
+[1.1.0]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.1...v1.1.0 "v1.1.0"
+[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.0...HEAD "In Development"
 [keep a changelog]: http://keepachangelog.com/ "Keep a Changelog"
 [semantic versioning]: http://semver.org/ "Semantic Versioning"
