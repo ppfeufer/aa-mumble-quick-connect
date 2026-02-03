@@ -42,6 +42,12 @@ Section Order:
 
 <!-- Your changes go here -->
 
+## [1.1.2] - 2026-02-03
+
+### Changed
+
+- Translations updated
+
 ## [1.1.1] - 2026-01-05
 
 ### Changed
@@ -171,6 +177,7 @@ Section Order:
 [1.0.1]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.0...v1.0.1 "v1.0.1"
 [1.1.0]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.0.1...v1.1.0 "v1.1.0"
 [1.1.1]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.0...v1.1.1 "v1.1.1"
-[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.1...HEAD "In Development"
+[1.1.2]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.1...v1.1.2 "v1.1.2"
+[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.2...HEAD "In Development"
 [keep a changelog]: http://keepachangelog.com/ "Keep a Changelog"
 [semantic versioning]: http://semver.org/ "Semantic Versioning"
