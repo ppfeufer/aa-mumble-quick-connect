@@ -52,10 +52,8 @@ urls.GitHub = "https://github.com/ppfeufer/aa-mumble-quick-connect"
 urls.Tracker = "https://github.com/ppfeufer/aa-mumble-quick-connect/issues"
 urls.Translation = "https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/"
 
-[tool.hatch.build]
-include = [
+[tool.hatch]
+build.include = [
     "/aa_mumble_quick_connect",
 ]
-
-[tool.hatch.version]
-path = "aa_mumble_quick_connect/__init__.py"
+version.path = "aa_mumble_quick_connect/__init__.py"
