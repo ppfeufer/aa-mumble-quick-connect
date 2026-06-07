@@ -43,6 +43,8 @@ Section Order:
 
 <!-- Your changes go here -->
 
+## [2.0.0] - 2026-06-07
+
 > [!IMPORTANT]
 >
 > **This version needs Alliance Auth v5!**
@@ -201,6 +203,7 @@ Section Order:
 [1.1.1]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.0...v1.1.1 "v1.1.1"
 [1.1.2]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.1...v1.1.2 "v1.1.2"
 [1.1.3]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.2...v1.1.3 "v1.1.3"
-[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.3...HEAD "In Development"
+[2.0.0]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v1.1.3...v2.0.0 "v2.0.0"
+[in development]: https://github.com/ppfeufer/aa-mumble-quick-connect/compare/v2.0.0...HEAD "In Development"
 [keep a changelog]: http://keepachangelog.com/ "Keep a Changelog"
 [semantic versioning]: http://semver.org/ "Semantic Versioning"
