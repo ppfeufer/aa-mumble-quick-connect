@@ -4,7 +4,9 @@ Template tags for the aa-mumble-quick-connect app.
 
 # Django
 from django import template
-from django.contrib.auth.models import User
+
+# Alliance Auth
+from allianceauth.authentication.models import User
 
 register = template.Library()
 
