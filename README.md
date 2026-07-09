@@ -62,7 +62,7 @@ ______________________________________________________________________
 Install the app using pip:
 
 ```shell
-pip install aa-mumble-quick-connect==2.0.1
+pip install aa-mumble-quick-connect==2.1.0
 ```
 
 #### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings"></a>
@@ -91,7 +91,7 @@ python manage.py collectstatic --noinput
 Add the app to your `conf/requirements.txt`:
 
 ```text
-aa-mumble-quick-connect==2.0.1
+aa-mumble-quick-connect==2.1.0
 ```
 
 #### Step 2: Update Your AA Settings<a name="step-2-update-your-aa-settings-1"></a>
