@@ -10,7 +10,7 @@ from django.test import TestCase, modify_settings
 from django.urls import reverse
 
 # AA Mumble Quick Connect
-from aa_mumble_quick_connect.tests.utils import create_fake_user
+from aa_mumble_quick_connect.tests.utils import create_fake_user, random_id
 
 
 class TestHooks(TestCase):
@@ -31,7 +31,7 @@ class TestHooks(TestCase):
 
         # User
         cls.user_1001 = create_fake_user(
-            character_id=1001,
+            character_id=random_id(),
             character_name="Jean Luc Picard",
             permissions=[
                 "aa_mumble_quick_connect.basic_access",
@@ -40,7 +40,7 @@ class TestHooks(TestCase):
         )
 
         cls.user_1002 = create_fake_user(
-            character_id=1002, character_name="Wesley Crusher"
+            character_id=random_id(), character_name="Wesley Crusher"
         )
 
         cls.html_menu = f"""

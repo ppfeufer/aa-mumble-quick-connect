@@ -5,8 +5,8 @@ Test the apps' template tags
 # Standard Library
 from unittest.mock import Mock
 
-# Django
-from django.contrib.auth.models import User
+# Alliance Auth
+from allianceauth.authentication.models import User
 
 # AA Mumble Quick Connect
 from aa_mumble_quick_connect.templatetags.aa_mumble_quick_connect import (

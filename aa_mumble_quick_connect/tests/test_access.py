@@ -12,6 +12,7 @@ from django.urls import reverse
 # AA Mumble Quick Connect
 from aa_mumble_quick_connect.tests.utils import (
     create_fake_user,
+    random_id,
     response_content_to_str,
 )
 
@@ -31,7 +32,7 @@ class TestAccess(TestCase):
 
         # User
         cls.user_1001 = create_fake_user(
-            character_id=1001,
+            character_id=random_id(),
             character_name="Jean Luc Picard",
             permissions=[
                 "aa_mumble_quick_connect.basic_access",
@@ -40,19 +41,19 @@ class TestAccess(TestCase):
         )
 
         cls.user_1002 = create_fake_user(
-            character_id=1002,
+            character_id=random_id(),
             character_name="William Riker",
             permissions=["mumble.access_mumble"],
         )
 
         cls.user_1003 = create_fake_user(
-            character_id=1003,
+            character_id=random_id(),
             character_name="Worf",
             permissions=["aa_mumble_quick_connect.basic_access"],
         )
 
         cls.user_1004 = create_fake_user(
-            character_id=1004, character_name="Wesley Crusher"
+            character_id=random_id(), character_name="Wesley Crusher"
         )
 
         cls.html_menu = f"""

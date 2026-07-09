@@ -4,13 +4,14 @@ Helper for our tests
 
 # Standard Library
 import re
+import secrets
 
 # Django
-from django.contrib.auth.models import User
 from django.core.handlers.wsgi import WSGIRequest
 from django.template import Context, Template
 
 # Alliance Auth
+from allianceauth.authentication.models import User
 from allianceauth.tests.auth_utils import AuthUtils
 
 
@@ -102,3 +103,16 @@ def create_fake_user(
         user = AuthUtils.add_permissions_to_user(perms=perm_objs, user=user)
 
     return user
+
+
+def random_id(n: int = 26) -> int:
+    """
+    Generate a random ID
+
+    :param n: Length of the ID, optional (default=26 (8 digits in base36))
+    :type n: int
+    :return: A random ID
+    :rtype: int
+    """
+
+    return secrets.randbits(n)
