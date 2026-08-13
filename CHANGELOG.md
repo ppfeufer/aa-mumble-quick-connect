@@ -43,6 +43,10 @@ Section Order:
 
 <!-- Your changes go here -->
 
+### Changed
+
+- Update to modernized Masonry library
+
 ## [2.1.1] - 2026-08-03
 
 ### Changed
