@@ -4,7 +4,7 @@
 {% if channels_in_sections %}
     {% for section in channels_in_sections %}
         {% if section.mumble_links.count %}
-            <div class="col-sm-6 col-lg-4 mb-3">
+            <div class="col-sm-6 col-lg-4">
                 <div id="section-{{ section.name|slugify }}" class="card card-primary{% if section_highlight == section.name|slugify %} border-success{% endif %}">
                     <div class="card-header{% if section_highlight == section.name|slugify %} bg-success{% endif %}">
                         <div class="card-title">

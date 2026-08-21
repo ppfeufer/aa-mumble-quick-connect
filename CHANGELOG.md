@@ -50,6 +50,7 @@ Section Order:
 
 ### Changed
 
+- Properly use Bootstraps gutter system
 - Update to modernized Masonry library
 
 ## [2.1.1] - 2026-08-03
