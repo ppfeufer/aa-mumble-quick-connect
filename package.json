@@ -1,5 +1,6 @@
 {
-    "name": "aa-mumble-quick-connect",
+    "name": "@ppfeufer/aa-mumble-quick-connect",
+    "version": "2.1.1",
     "type": "module",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
