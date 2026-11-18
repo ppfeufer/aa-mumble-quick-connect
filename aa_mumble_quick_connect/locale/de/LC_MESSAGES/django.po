@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: AA Mumble Quick Connect\n"
 "Report-Msgid-Bugs-To: https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/\n"
-"POT-Creation-Date: 2026-10-06 13:38+0200\n"
+"POT-Creation-Date: 2026-10-09 12:25+0200\n"
 "PO-Revision-Date: 2026-09-27 17:49+0000\n"
 "Last-Translator: Automatic translation add-on <noreply-addon-autotranslate@weblate.ppfeufer.de>\n"
 "Language-Team: German <https://weblate.ppfeufer.de/projects/alliance-auth-apps/aa-mumble-quick-connect/de/>\n"
@@ -77,15 +77,15 @@ msgstr "Mumble Link"
 msgid "Mumble Links"
 msgstr "Mumble Links"
 
-#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:15
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:14
 msgid "You don't have your Mumble service set up. Please go to the services page and activate the Mumble service."
 msgstr "Du hast Deinen Mumble-Dienst nicht eingerichtet. Bitte gehe zur Diensteseite und aktiviere den Mumble-Dienst."
 
-#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:20
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/index.html:19
 msgid "Mumble service is not installed!"
 msgstr "Mumble Service ist nicht installiert!"
 
-#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:10
+#: aa_mumble_quick_connect/templates/aa_mumble_quick_connect/partials/channels-without-sections.html:8
 msgid "Uncategorized"
 msgstr "Unkategorisiert"
 
